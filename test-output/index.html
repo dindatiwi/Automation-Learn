@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Tiwi\AppData\Local\Temp\testng-eclipse-1969100686\testng-customsuite.xml</span>
+                    <span>C:\Users\Tiwi\AppData\Local\Temp\testng-eclipse-1472774319\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Aleph_Labs.Assignment.WebTest.WebTest" class="method navigator-link" hash-for-method="verify_title">verify_title</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Aleph_Labs.Assignment.APITest.APITest" class="method navigator-link" hash-for-method="verify_data_input">verify_data_input</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Aleph_Labs.Assignment.APITest.APITest" class="method navigator-link" hash-for-method="verify_data_types">verify_data_types</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +125,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Aleph_Labs.Assignment.WebTest.WebTest</span>
+              <span class="class-name">Aleph_Labs.Assignment.APITest.APITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_title">
-                  </a> <!-- verify_title -->
-                  <span class="method-name">verify_title</span>
+                  <a name="verify_data_input">
+                  </a> <!-- verify_data_input -->
+                  <span class="method-name">verify_data_input</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_data_types">
+                  </a> <!-- verify_data_types -->
+                  <span class="method-name">verify_data_types</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Tiwi\AppData\Local\Temp\testng-eclipse-1969100686\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Tiwi\AppData\Local\Temp\testng-eclipse-1472774319\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +156,7 @@
 &lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Aleph_Labs.Assignment.WebTest.WebTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verify_title&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Aleph_Labs.Assignment.WebTest.WebTest --&gt;
+      &lt;class name=&quot;Aleph_Labs.Assignment.APITest.APITest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,11 +196,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_title')
-data.setCell(0, 2, 'Aleph_Labs.Assignment.WebTest.WebTest')
-data.setCell(0, 3, 1887);
+data.setCell(0, 1, 'verify_data_input')
+data.setCell(0, 2, 'Aleph_Labs.Assignment.APITest.APITest')
+data.setCell(0, 3, 1182);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_data_types')
+data.setCell(1, 2, 'Aleph_Labs.Assignment.APITest.APITest')
+data.setCell(1, 3, 369);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -223,19 +235,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Aleph_Labs.Assignment.WebTest.WebTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">Aleph_Labs.Assignment.APITest.APITest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verify_title</span>
-                <span class="method-start">5506 ms</span>
+                <span class="method-name">verify_data_input</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7394 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">verify_data_types</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
